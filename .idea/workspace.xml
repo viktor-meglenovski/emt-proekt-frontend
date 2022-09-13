@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f107913-713a-4a69-a37d-cd2c1ee7268c" name="Changes" comment="" />
+    <list default="true" id="8f107913-713a-4a69-a37d-cd2c1ee7268c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/threed-manager-frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/threed-manager-frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/threed-manager-frontend/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/threed-manager-frontend/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/threed-manager-frontend/src/repository/repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/threed-manager-frontend/src/repository/repository.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2ECwOsaVb7Vzm3lcvzF6AA7H79R" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Viktor/Desktop/ThreeD-Manager-FrontEnd",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Viktor/Desktop/ThreeD-Manager-FrontEnd/threed-manager-frontend&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -30,6 +38,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662112844533</updated>
       <workItem from="1662112846358" duration="16000" />
+      <workItem from="1662378089381" duration="15000" />
+      <workItem from="1662907960354" duration="16000" />
     </task>
     <servers />
   </component>

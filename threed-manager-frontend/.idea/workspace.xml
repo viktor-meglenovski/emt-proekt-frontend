@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37d7a92f-7cc1-4fca-ba8c-b3bb0999a758" name="Changes" comment="" />
+    <list default="true" id="37d7a92f-7cc1-4fca-ba8c-b3bb0999a758" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom-axios/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom-axios/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/repository.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +21,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2E7V5Lm4RFO63JywOkwXWj8Z7zT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Viktor/Desktop/ThreeD-Manager/pom.xml",
+    "last_opened_file_path": "C:/Users/Viktor/Desktop/ThreeD-Manager-FrontEnd/threed-manager-frontend",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
@@ -35,6 +46,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Viktor\Desktop\ThreeD-Manager-FrontEnd\threed-manager-frontend\src\components\MyProfile" />
       <recent name="C:\Users\Viktor\Desktop\ThreeD-Manager-FrontEnd\threed-manager-frontend\src\components\App" />
     </key>
   </component>
@@ -49,7 +61,12 @@
       <workItem from="1661946426231" duration="43000" />
       <workItem from="1661946519160" duration="70000" />
       <workItem from="1662112879701" duration="8088000" />
-      <workItem from="1662145483084" duration="7321000" />
+      <workItem from="1662145483084" duration="9443000" />
+      <workItem from="1662332729869" duration="171000" />
+      <workItem from="1662378106329" duration="307000" />
+      <workItem from="1662907978311" duration="1569000" />
+      <workItem from="1662925733706" duration="1806000" />
+      <workItem from="1663088208625" duration="8225000" />
     </task>
     <servers />
   </component>
