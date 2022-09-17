@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import repository from "../../repository/repository";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 
 class Login extends Component {
     state = {

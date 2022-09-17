@@ -31,11 +31,11 @@ const MyProfile=(props)=>{
             </div>
             <hr className={"mb-2 mt-1"}/>
             <Link to={"/editProfile"} className={"btn btn-block btn-lg btn-warning text-white rounded-5 col-12 mt-0 mb-2"}>Edit your Profile</Link>
-            <hr className={"mb-1 mt-1"}/>
-            <h3>Linked Accounts</h3>
-            {props.user.externalLinks.forEach(x => {linkedAccounts.push(<a href={x.link}><img style={{width:"70px"}} className={"m-2"} src={buildImagePath(x.name.imageLocation)}/></a>)})}
+            {localStorage.getItem("Role")==="FREELANCER" && <hr className={"mb-1 mt-1"}/>}
+            {localStorage.getItem("Role")==="FREELANCER" && <h3>Linked Accounts</h3>}
+            {localStorage.getItem("Role")==="FREELANCER" && props.user.externalLinks.forEach(x => {linkedAccounts.push(<a href={x.link}><img style={{width:"70px"}} className={"m-2"} src={buildImagePath(x.name.imageLocation)}/></a>)})}
             {linkedAccounts}
-            <hr/>
+            {localStorage.getItem("Role")==="FREELANCER" && <hr className={"mb-1 mt-1"}/>}
             {localStorage.getItem("Role")==="FREELANCER" && <Link to={"/linkAccounts"} className={"btn btn-block btn-lg btn-primary text-white rounded-5 col-12 mt-0 mb-2"}>Manage Linked Accounts</Link>}
             {localStorage.getItem("Role")==="CLIENT" && <Link to={"/changeCompany"} className={"btn btn-block btn-lg btn-primary text-white rounded-5 col-12 mt-0 mb-2"}>Change Company</Link>}
 

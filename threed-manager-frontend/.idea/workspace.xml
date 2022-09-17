@@ -6,11 +6,10 @@
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/ChangeCompany/ChangeCompany.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/ChangeCompany/ChangeCompany.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/LinkAccounts/LinkAccounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/LinkAccounts/LinkAccounts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyProfile/MyProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/MyProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/repository.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +49,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Viktor\Desktop\ThreeD-Manager-FrontEnd\threed-manager-frontend\src\components\Projects" />
       <recent name="C:\Users\Viktor\Desktop\ThreeD-Manager-FrontEnd\threed-manager-frontend\src\components\MyProfile" />
       <recent name="C:\Users\Viktor\Desktop\ThreeD-Manager-FrontEnd\threed-manager-frontend\src\components\App" />
     </key>
@@ -77,6 +77,9 @@
       <workItem from="1663237666177" duration="5292000" />
       <workItem from="1663255198925" duration="7930000" />
       <workItem from="1663279452824" duration="7994000" />
+      <workItem from="1663325403475" duration="18455000" />
+      <workItem from="1663411149500" duration="16253000" />
+      <workItem from="1663450650330" duration="2069000" />
     </task>
     <servers />
   </component>

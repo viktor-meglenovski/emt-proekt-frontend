@@ -23,8 +23,8 @@ class ChangeCompany extends Component{
                         <input className="form-control" type="text" name="company" id="company" placeholder={this.props.user.company}/>
                     </div>
                     <hr/>
-                    <button className="btn btn-block btn-large btn-success col-12 rounded-5 mb-2 " type="submit">Change Company</button>
-                    <Link className="btn btn-block btn-large btn-danger col-12 rounded-5 mb-2" to={"/myProfile"}>Cancel</Link>
+                    <button className="btn btn-block btn-lg btn-success col-12 rounded-5 mb-2 " type="submit">Change Company</button>
+                    <Link className="btn btn-block btn-lg btn-danger col-12 rounded-5 mb-2" to={"/myProfile"}>Cancel</Link>
                 </form>
             </div>
         );

@@ -23,7 +23,6 @@ const LinkAccounts=(props)=>{
             form.elements.platform.value="";
             form.elements.link.value="";
         }
-        console.log(platform+" "+link);
         props.reloadUser();
     }
     const onDeleteLink=(name)=>{
