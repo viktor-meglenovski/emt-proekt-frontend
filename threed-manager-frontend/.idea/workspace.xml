@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="37d7a92f-7cc1-4fca-ba8c-b3bb0999a758" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/ChangeCompany/ChangeCompany.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/ChangeCompany/ChangeCompany.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/LinkAccounts/LinkAccounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/LinkAccounts/LinkAccounts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/MyProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/MyProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Clients/Clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clients/Clients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/VisitProfile/VisitProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/VisitProfile/VisitProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/MyProjects/MyProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/MyProjects/MyProjects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/ViewProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/ViewProject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/repository.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -42,6 +42,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Viktor/Desktop/ThreeD-Manager-FrontEnd/threed-manager-frontend&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
@@ -79,7 +80,11 @@
       <workItem from="1663279452824" duration="7994000" />
       <workItem from="1663325403475" duration="18455000" />
       <workItem from="1663411149500" duration="16253000" />
-      <workItem from="1663450650330" duration="2069000" />
+      <workItem from="1663450650330" duration="6841000" />
+      <workItem from="1663497660978" duration="5910000" />
+      <workItem from="1663527867995" duration="12178000" />
+      <workItem from="1663583239749" duration="1196000" />
+      <workItem from="1663607777371" duration="11710000" />
     </task>
     <servers />
   </component>

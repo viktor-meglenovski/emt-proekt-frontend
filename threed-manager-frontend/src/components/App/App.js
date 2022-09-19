@@ -16,6 +16,7 @@ import Freelancers from "../Freelancers/Freelancers";
 import MyProjects from "../Projects/MyProjects/MyProjects";
 import ProposeProject from "../Projects/ProposeProject/ProposeProject";
 import ViewProject from "../Projects/ViewProject/ViewProject"
+import ViewTask from "../Projects/ViewProject/Tasks/ViewTask/ViewTask";
 
 class App extends Component {
     constructor(props) {
@@ -25,7 +26,8 @@ class App extends Component {
             externalLinkNames: [],
             clients: [],
             profileToView: null,
-            project:null
+            project:null,
+            task:null
         }
     }
     fetchData = () => {
@@ -50,8 +52,8 @@ class App extends Component {
     loadProject=(projectId)=>{
         repository.loadProject(projectId).then((resp)=>{
             this.setState({project:resp.data})
-            console.log(resp.data)
         })
+        console.log(this.state.project)
     }
     componentDidMount() {
         this.fetchData();
@@ -61,6 +63,12 @@ class App extends Component {
             this.setState({
                 profileToView: resp.data
             })
+        })
+    }
+    loadTask=(projectId,taskId)=>{
+        this.loadProject(projectId);
+        this.setState({
+            task:this.state.project.projectTasks.filter(x=>x.id.id===taskId)[0]
         })
     }
 
@@ -84,10 +92,10 @@ class App extends Component {
                             {localStorage.getItem("JWT") && localStorage.getItem("Role")==="FREELANCER" && <Route path="/clients"  element={<Clients onView={this.getProfile}/>}/>}
                             {localStorage.getItem("JWT") && localStorage.getItem("Role")==="CLIENT" && <Route path="/freelancers"  element={<Freelancers onView={this.getProfile} onPropose={this.getProfile}/>}/>}
                             {localStorage.getItem("JWT") && <Route path="/visitProfile/:email/:role" element={<VisitProfile user={this.state.profileToView}/>}/>}
-                            {localStorage.getItem("JWT") && <Route path="/myProjects" element={<MyProjects onProjectView={this.loadProject}/>}/>}
+                            {localStorage.getItem("JWT") && <Route path="/myProjects" element={<MyProjects onProjectView={this.loadProject} status={"PROPOSED"} onProfileView={this.getProfile}/>}/>}
                             {localStorage.getItem("JWT") && <Route path="/proposeProject/:email" element={<ProposeProject user={this.state.profileToView}/>}/>}
-                            {localStorage.getItem("JWT") && <Route path="/viewProject/:projectId" element={<ViewProject project={this.state.project}/>}/>}
-
+                            {localStorage.getItem("JWT") && <Route path="/viewProject/:projectId" element={<ViewProject project={this.state.project} reloadProject={this.loadProject} viewTask={this.loadTask}/>}/>}
+                            {localStorage.getItem("JWT") && <Route path="/viewTask/:projectId/:taskId" element={<ViewTask project={this.state.project} task={this.state.task} reloadTask={this.loadTask} onProjectView={this.loadProject}/>}/>}
 
                             //default route
                             <Route path="*" element={<Navigate to="/home" />}/>

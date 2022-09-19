@@ -34,7 +34,7 @@ const VisitProfile = (props) => {
             {props.user.role==="FREELANCER" && <hr className={"mt-1 mb-1"}/>}
             {props.user.role==="FREELANCER" && props.user.externalLinks.forEach(x => {linkedAccounts.push(<a href={x.link}><img style={{width:"70px"}} className={"m-2"} src={buildImagePath(x.name.imageLocation)}/></a>)})}
             {linkedAccounts}
-            {props.user.role==="FREELANCER" && linkedAccounts.length===0 && <h5 className={"text-danger fst-italic"}>This freelancer has not linked any external accounts yet!</h5>}
+            {props.user.role==="FREELANCER" && linkedAccounts.length===0 && <h5 className={"text-danger fst-italic"}>{props.user.email} has not linked any external accounts yet!</h5>}
         </div>
     )
         ;
