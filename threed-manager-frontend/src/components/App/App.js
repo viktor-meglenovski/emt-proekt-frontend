@@ -71,6 +71,11 @@ class App extends Component {
             task:this.state.project.projectTasks.filter(x=>x.id.id===taskId)[0]
         })
     }
+    updateTask=(task)=>{
+        this.setState({
+            task:task
+        })
+    }
 
     render() {
         return (
@@ -95,7 +100,7 @@ class App extends Component {
                             {localStorage.getItem("JWT") && <Route path="/myProjects" element={<MyProjects onProjectView={this.loadProject} status={"PROPOSED"} onProfileView={this.getProfile}/>}/>}
                             {localStorage.getItem("JWT") && <Route path="/proposeProject/:email" element={<ProposeProject user={this.state.profileToView}/>}/>}
                             {localStorage.getItem("JWT") && <Route path="/viewProject/:projectId" element={<ViewProject project={this.state.project} reloadProject={this.loadProject} viewTask={this.loadTask}/>}/>}
-                            {localStorage.getItem("JWT") && <Route path="/viewTask/:projectId/:taskId" element={<ViewTask project={this.state.project} task={this.state.task} reloadTask={this.loadTask} onProjectView={this.loadProject}/>}/>}
+                            {localStorage.getItem("JWT") && <Route path="/viewTask/:projectId/:taskId" element={<ViewTask project={this.state.project} task={this.state.task} reloadTask={this.loadTask} onProjectView={this.loadProject} updateTask={this.updateTask}/>}/>}
 
                             //default route
                             <Route path="*" element={<Navigate to="/home" />}/>

@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faFile} from '@fortawesome/free-solid-svg-icons'
 import repository from "../../../repository/repository";
 import Tasks from "./Tasks/Tasks";
+import RatingForm from "./RatingForm/RatingForm";
+import {faFile} from "@fortawesome/free-solid-svg-icons"
 
 const ViewProject = (props) => {
     const buildFilePath = (path) => {
@@ -58,9 +59,10 @@ const ViewProject = (props) => {
             {props.project.status==="CANCELED" && <div><h3 className={"text-danger fst-italic text-center mb-3"}>This project has been canceled! :(</h3></div>}
             {props.project.status !== "PROPOSED" && props.project.status !=="CANCELED" &&
                 <div>
-                    <Tasks tasks={props.project.projectTasks} projectId={props.project.id.id} reloadProject={props.reloadProject} viewTask={props.viewTask}/>
+                    <Tasks tasks={props.project.projectTasks} projectId={props.project.id.id} projectStatus={props.project.status} reloadProject={props.reloadProject} viewTask={props.viewTask}/>
                 </div>
             }
+            {(props.project.status ==="FINISHED" || props.project.status==="RATED") && <RatingForm project={props.project}/>}
             <hr/>
             <Link to={"/myProjects"} className={"btn btn-block btn-lg rounded-5 btn-primary col-12 mb-2"}>Go back to My Projects</Link>
         </div>);
@@ -100,9 +102,10 @@ const ViewProject = (props) => {
 
                 {props.project.status !== "PROPOSED" && props.project.status !=="CANCELED" &&
                     <div>
-                        <Tasks tasks={props.project.projectTasks} projectId={props.project.id.id} reloadProject={props.reloadProject} viewTask={props.viewTask}/>
+                        <Tasks tasks={props.project.projectTasks} projectId={props.project.id.id} projectStatus={props.project.status} reloadProject={props.reloadProject} viewTask={props.viewTask}/>
                     </div>
                 }
+                {(props.project.status ==="FINISHED" || props.project.status==="RATED") && <RatingForm project={props.project}/>}
                 <hr/>
                 <Link to={"/myProjects"} className={"btn btn-block btn-lg rounded-5 btn-primary col-12 mb-2"}>Go back to My Projects</Link>
             </div>

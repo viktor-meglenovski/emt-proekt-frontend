@@ -117,6 +117,31 @@ const Repository={
             formData.append('messageAttachments', messageAttachments[i])
         }
         return axios.post(projectUrl+"/api/project/addMessageToTask",formData,placeAuthToken());
+    },
+    sendDelivery:(projectId,taskId,content,deliveryAttachments)=>{
+        const formData = new FormData();
+        formData.append('projectId',projectId);
+        formData.append('taskId',taskId);
+        formData.append('content',content);
+        for(let i = 0; i< deliveryAttachments.length; i++) {
+            formData.append('deliveryAttachments', deliveryAttachments[i])
+            console.log("bla")
+        }
+        return axios.post(projectUrl+"/api/project/addDeliveryToTask",formData,placeAuthToken());
+    },
+    provideFeedbackForDelivery:(projectId,taskId,deliveryId, feedback,accepted)=>{
+        return axios.post(projectUrl+"/api/project/provideFeedbackForDelivery",{
+            projectId:projectId,
+            taskId:taskId,
+            deliveryId:deliveryId,
+            feedback:feedback,
+            accepted:accepted
+        },placeAuthToken());
+    },
+    finishProject:(projectId)=>{
+        return axios.post(projectUrl+"/api/project/finishProject",{
+            projectId:projectId
+        },placeAuthToken());
     }
 }
 

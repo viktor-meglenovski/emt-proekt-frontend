@@ -6,6 +6,9 @@ import {Link} from "react-router-dom";
 
 const Tasks = (props) => {
     const [taskError, setTaskError] = useState(false);
+    const [tasks, setTasks] = useState(props.tasks.sort((x, y) => {
+        return x.timestamp.localeCompare(y.timestamp)
+    }));
     const element = <h4><FontAwesomeIcon icon={faCircleInfo}/></h4>
     const addTaskForm = (e) => {
         e.preventDefault();
@@ -17,9 +20,27 @@ const Tasks = (props) => {
             setTaskError(false)
             repository.addTask(props.projectId, title).then(resp => {
                 props.reloadProject(props.projectId);
+                setTasks(resp.data.projectTasks.sort((x, y) => {
+                    return x.timestamp.localeCompare(y.timestamp)
+                }))
             })
             form.elements.title.value = "";
         }
+    }
+    const finishProject=(e)=>{
+        e.preventDefault();
+        repository.finishProject(props.projectId).then((resp)=>{
+            props.reloadProject(props.projectId);
+            setTasks(resp.data.projectTasks.sort((x, y) => {
+                return x.timestamp.localeCompare(y.timestamp)
+            }))
+        })
+    }
+    const canFinish=()=>{
+        var roleB=localStorage.getItem("Role") === "CLIENT"
+        var tasksB=(tasks.length>0 && tasks.filter(x=>x.taskStatus==="ACCEPTED").length===tasks.length)
+        var statusB=props.projectStatus!=="FINISHED"
+        return roleB && tasksB && statusB
     }
     const tasksRows = []
     return (
@@ -27,7 +48,8 @@ const Tasks = (props) => {
             <h2 className={"text-center mb-2"}>Tasks</h2>
             {props.tasks.length === 0 &&
                 <h5 className={"text-danger fst-italic text-center"}>This project has no tasks yet!</h5>}
-            {props.tasks.length !== 0 && props.tasks.forEach(x => tasksRows.push((<tr>
+            {props.tasks.length !== 0 && tasks.forEach(x => tasksRows.push((<tr>
+                <td className={"align-middle"}>{tasks.indexOf(x)+1}</td>
                 <td className={"align-middle"}>{x.title}</td>
                 <td className={"text-center align-middle"}>
                     <h5>{x.taskStatus === "STARTED" && <span
@@ -45,6 +67,7 @@ const Tasks = (props) => {
                 <table className={"table table-hover"}>
                     <thead className={"bg-dark text-white"}>
                     <tr>
+                        <th>#</th>
                         <th>Title</th>
                         <th className={"text-center"}>Status</th>
                         <th></th>
@@ -68,7 +91,11 @@ const Tasks = (props) => {
                     {taskError && <div className="bg-danger text-white rounded-5 pb-2 pt-2 mb-0 text-center mt-3"><h4>Please provide a title for the new task!</h4></div>}
                 </form>
             }
-
+            {canFinish()  &&
+                <form onSubmit={finishProject}>
+                    <button className={"btn btn-success btn-lg btn-block rounded-5 col-12"}>Finish Project</button>
+                </form>
+            }
         </div>
     );
 }

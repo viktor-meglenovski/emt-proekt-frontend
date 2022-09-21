@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="37d7a92f-7cc1-4fca-ba8c-b3bb0999a758" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Clients/Clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clients/Clients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/VisitProfile/VisitProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/VisitProfile/VisitProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/MyProjects/MyProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/MyProjects/MyProjects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/Tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/Tasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/MessageItem/MessageItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/MessageItem/MessageItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/Messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/Messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/ViewTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/ViewTask.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/ViewProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/ViewProject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/repository.js" afterDir="false" />
     </list>
@@ -85,6 +87,8 @@
       <workItem from="1663527867995" duration="12178000" />
       <workItem from="1663583239749" duration="1196000" />
       <workItem from="1663607777371" duration="11710000" />
+      <workItem from="1663665215116" duration="11215000" />
+      <workItem from="1663698489398" duration="10876000" />
     </task>
     <servers />
   </component>
