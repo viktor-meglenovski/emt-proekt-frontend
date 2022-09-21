@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import repository from "../../../repository/repository";
 import Tasks from "./Tasks/Tasks";
 import RatingForm from "./RatingForm/RatingForm";
 import {faFile} from "@fortawesome/free-solid-svg-icons"
+
 
 const ViewProject = (props) => {
     const buildFilePath = (path) => {
@@ -34,6 +35,7 @@ const ViewProject = (props) => {
                     {props.project.status==="CANCELED" && <span className={"badge bg-danger text-white rounded-5 col-12 mt-2"}>{props.project.status}</span>}
                     {props.project.status==="ACCEPTED" && <span className={"badge bg-primary text-white rounded-5 col-12 mt-2"}>IN PROGRESS</span>}
                     {props.project.status==="FINISHED" && <span className={"badge bg-success text-white rounded-5 col-12 mt-2"}>{props.project.status}</span>}
+                    {props.project.status==="RATED" && <span className={"badge bg-warning text-white rounded-5 col-12 mt-2"}>{props.project.status}</span>}
                 </h3>
             </div>
             <hr className={"mt-0 mb-1"}/>
@@ -62,7 +64,7 @@ const ViewProject = (props) => {
                     <Tasks tasks={props.project.projectTasks} projectId={props.project.id.id} projectStatus={props.project.status} reloadProject={props.reloadProject} viewTask={props.viewTask}/>
                 </div>
             }
-            {(props.project.status ==="FINISHED" || props.project.status==="RATED") && <RatingForm project={props.project}/>}
+            {(props.project.status ==="FINISHED" || props.project.status==="RATED") && <RatingForm project={props.project} reloadProject={props.reloadProject}/>}
             <hr/>
             <Link to={"/myProjects"} className={"btn btn-block btn-lg rounded-5 btn-primary col-12 mb-2"}>Go back to My Projects</Link>
         </div>);
@@ -76,6 +78,7 @@ const ViewProject = (props) => {
                         {props.project.status==="CANCELED" && <span className={"badge bg-danger text-white rounded-5 col-12 mt-2"}>{props.project.status}</span>}
                         {props.project.status==="ACCEPTED" && <span className={"badge bg-primary text-white rounded-5 col-12 mt-2"}>IN PROGRESS</span>}
                         {props.project.status==="FINISHED" && <span className={"badge bg-success text-white rounded-5 col-12 mt-2"}>{props.project.status}</span>}
+                        {props.project.status==="RATED" && <span className={"badge bg-warning text-white rounded-5 col-12 mt-2"}>{props.project.status}</span>}
                     </h3>
                 </div>
                 <hr className={"mt-0 mb-1"}/>
@@ -105,7 +108,7 @@ const ViewProject = (props) => {
                         <Tasks tasks={props.project.projectTasks} projectId={props.project.id.id} projectStatus={props.project.status} reloadProject={props.reloadProject} viewTask={props.viewTask}/>
                     </div>
                 }
-                {(props.project.status ==="FINISHED" || props.project.status==="RATED") && <RatingForm project={props.project}/>}
+                {(props.project.status ==="FINISHED" || props.project.status==="RATED") && <RatingForm project={props.project} reloadProject={props.reloadProject}/>}
                 <hr/>
                 <Link to={"/myProjects"} className={"btn btn-block btn-lg rounded-5 btn-primary col-12 mb-2"}>Go back to My Projects</Link>
             </div>

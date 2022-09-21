@@ -20,7 +20,7 @@ const MyProjects = (props) => {
             <h1>My Projects</h1>
             <hr className={"mt-3 mb-1"}/>
             <div className={"row"}>
-                <div class={"col-3"}>
+                <div class={"col"}>
                     {status === "PROPOSED" && <button className={"col-10 btn btn-info text-white rounded-5"} onClick={() => {
                         loadProjects("PROPOSED")
                     }}><h3>Proposed</h3></button>}
@@ -28,7 +28,7 @@ const MyProjects = (props) => {
                         loadProjects("PROPOSED")
                     }}><h3>Proposed</h3></button>}
                 </div>
-                <div className={"col-3"}>
+                <div className={"col"}>
                     {status === "ACCEPTED" && <button className={"col-10 btn btn-primary rounded-5"} onClick={() => {
                         loadProjects("ACCEPTED")
                     }}><h3>In Progress</h3></button>}
@@ -36,7 +36,7 @@ const MyProjects = (props) => {
                         loadProjects("ACCEPTED")
                     }}><h3>In Progress</h3></button>}
                 </div>
-                <div className={"col-3"}>
+                <div className={"col"}>
                     {status === "FINISHED" && <button className={"col-10 btn btn-success rounded-5"} onClick={() => {
                         loadProjects("FINISHED")
                     }}><h3>Finished</h3></button>}
@@ -44,13 +44,21 @@ const MyProjects = (props) => {
                         loadProjects("FINISHED")
                     }}><h3>Finished</h3></button>}
                 </div>
-                <div className={"col-3"}>
+                <div className={"col"}>
                     {status === "CANCELED" && <button className={"col-10 btn btn-danger rounded-5"} onClick={() => {
                         loadProjects("CANCELED")
                     }}><h3>Canceled</h3></button>}
                     {status !== "CANCELED" && <button className={"col-10 btn btn-dark text-white rounded-5"} onClick={() => {
                         loadProjects("CANCELED")
                     }}><h3>Canceled</h3></button>}
+                </div>
+                <div className={"col"}>
+                    {status === "RATED" && <button className={"col-10 btn btn-warning text-white rounded-5"} onClick={() => {
+                        loadProjects("RATED")
+                    }}><h3>Rated</h3></button>}
+                    {status !== "RATED" && <button className={"col-10 btn btn-dark text-white rounded-5"} onClick={() => {
+                        loadProjects("RATED")
+                    }}><h3>Rated</h3></button>}
                 </div>
 
 

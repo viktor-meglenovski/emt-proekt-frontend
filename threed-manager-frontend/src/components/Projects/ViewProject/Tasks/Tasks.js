@@ -39,7 +39,7 @@ const Tasks = (props) => {
     const canFinish=()=>{
         var roleB=localStorage.getItem("Role") === "CLIENT"
         var tasksB=(tasks.length>0 && tasks.filter(x=>x.taskStatus==="ACCEPTED").length===tasks.length)
-        var statusB=props.projectStatus!=="FINISHED"
+        var statusB=(props.projectStatus!=="FINISHED" && props.projectStatus!=="RATED")
         return roleB && tasksB && statusB
     }
     const tasksRows = []
@@ -78,7 +78,7 @@ const Tasks = (props) => {
                     </tbody>
                 </table>
             </div>}
-            {localStorage.getItem("Role") === "FREELANCER" &&
+            {localStorage.getItem("Role") === "FREELANCER" && props.projectStatus==="ACCEPTED" &&
                 <form onSubmit={addTaskForm}>
                     <div className={"row"}>
                         <div className={"col-9"}>

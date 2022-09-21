@@ -12,8 +12,8 @@ const ProjectTable = (props) => {
             <hr className={"m-1"}/>
             <div className={"row"}>
                 <div className={"col-12 mt-2 mb-2"}>
-                    {props.projects.length === 0 && <h3 className={"text-danger fst-italic"}>You have no projects in
-                        the <span className={"badge rounded-5 text-white bg-danger pt-1"}>{props.status==="PROPOSED"?"PROPOSED": props.status==="CANCELED"?"CANCELED":props.status==="ACCEPTED"?"IN PROGRESS":"FINISHED"}</span> category!</h3>}
+                    {props.projects.length === 0 && <h3 className={"text-secondary fst-italic fw-bold"}>You have no projects in
+                        the <span className={"badge rounded-5 text-white bg-secondary pt-1"}>{props.status==="PROPOSED"?"PROPOSED": props.status==="CANCELED"?"CANCELED":props.status==="ACCEPTED"?"IN PROGRESS":props.status==="FINISHED"?"FINISHED":"RATED"}</span> category!</h3>}
 
                     {props.projects.length !== 0 && localStorage.getItem("Role") === "CLIENT" && props.projects.forEach(x => rowsProposed.push((
                         <tr>

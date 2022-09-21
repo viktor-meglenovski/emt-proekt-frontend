@@ -142,6 +142,12 @@ const Repository={
         return axios.post(projectUrl+"/api/project/finishProject",{
             projectId:projectId
         },placeAuthToken());
+    },
+    rateProject:(projectId,rating)=>{
+        return axios.post(projectUrl+"/api/project/rate",{
+            projectId:projectId,
+            rating:rating
+        },placeAuthToken());
     }
 }
 

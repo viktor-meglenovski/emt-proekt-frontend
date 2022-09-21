@@ -50,6 +50,8 @@ class App extends Component {
             });
     }
     loadProject=(projectId)=>{
+        console.log(this.state.project)
+        console.log(projectId)
         repository.loadProject(projectId).then((resp)=>{
             this.setState({project:resp.data})
         })

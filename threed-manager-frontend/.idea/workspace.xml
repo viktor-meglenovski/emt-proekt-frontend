@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d7a92f-7cc1-4fca-ba8c-b3bb0999a758" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Clients/Clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clients/Clients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Freelancers/Freelancers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Freelancers/Freelancers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/MyProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/MyProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyProfile/VisitProfile/VisitProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyProfile/VisitProfile/VisitProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/MyProjects/MyProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/MyProjects/MyProjects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/MyProjects/ProjectTable/ProjectTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/MyProjects/ProjectTable/ProjectTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/RatingForm/RatingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/RatingForm/RatingForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/Tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/Tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/MessageItem/MessageItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/MessageItem/MessageItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/Messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/Messages/Messages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/ViewTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/Tasks/ViewTask/ViewTask.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Projects/ViewProject/ViewProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ViewProject/ViewProject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/repository.js" afterDir="false" />
@@ -38,18 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Viktor/Desktop/ThreeD-Manager-FrontEnd/threed-manager-frontend&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Viktor/Desktop/ThreeD-Manager-FrontEnd/threed-manager-frontend",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Viktor\Desktop\ThreeD-Manager-FrontEnd\threed-manager-frontend\src\components\Projects" />
@@ -89,10 +98,22 @@
       <workItem from="1663607777371" duration="11710000" />
       <workItem from="1663665215116" duration="11215000" />
       <workItem from="1663698489398" duration="10876000" />
+      <workItem from="1663757795537" duration="11560000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

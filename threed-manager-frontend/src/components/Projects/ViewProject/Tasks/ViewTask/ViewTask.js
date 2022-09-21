@@ -43,6 +43,7 @@ const ViewTask = (props) => {
             setDeliveryError(false)
             repository.sendDelivery(props.project.id.id, task.id.id, content.value, deliveryAttachments.files).then((resp) => {
                 props.updateTask(resp.data)
+                props.onProjectView(props.project.id.id);
                 setMessages(resp.data.messages.sort((x, y) => {
                     return x.postingTime.localeCompare(y.postingTime)
                 }))
@@ -81,6 +82,7 @@ const ViewTask = (props) => {
                 setDeliveries(resp.data.deliveries.sort((x, y) => {
                     return x.deliveryTime.localeCompare(y.deliveryTime)
                 }))
+                props.onProjectView(props.project.id.id);
             })
         }
         feedback.value="";

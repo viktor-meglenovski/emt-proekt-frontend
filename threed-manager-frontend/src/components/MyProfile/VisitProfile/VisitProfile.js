@@ -16,7 +16,6 @@ const VisitProfile = (props) => {
                     <h3>Username:</h3>
                     <h3>Role:</h3>
                     <h3>Full Name:</h3>
-                    <h3>Number of Projects:</h3>
                     <h3>Rating:</h3>
                     {props.user.role === "CLIENT" && <h3>Company Name:</h3>}
                 </div>
@@ -24,7 +23,6 @@ const VisitProfile = (props) => {
                     <h3>{props.user.email}</h3>
                     <h3>{props.user.role}</h3>
                     <h3>{props.user.name} {props.user.surname}</h3>
-                    <h3>{props.user.rating.grades.length}</h3>
                     <h3>{props.user.rating.rating}</h3>
                     {props.user.role === "CLIENT" && <h3>{props.user.company}</h3>}
                 </div>
